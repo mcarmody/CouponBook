@@ -1,0 +1,129 @@
+@import "library";
+@import "reset";
+@import url(http://fonts.googleapis.com/css?family=Dawning+of+a+New+Day);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans);
+
+// Global templates
+
+%group:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+%container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+// Global tags
+
+body {
+	background: url(/images/fabric_bg.jpg);
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+a {
+    color: #800000;
+}
+
+//nav tabs
+
+.tabs {
+	position: absolute;
+	top: -1px;
+	min-width: 50px;
+	height: 300px;
+	overflow: hidden;
+
+
+	.tab {
+		background: tan;
+		border-right: 1px dashed black;
+		padding: 3px;
+		z-index: 0;
+
+		a {
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			line-height: 90%;
+			width: 100px;
+			font-weight: bold;
+		}
+	}
+}
+
+.active {
+	border-right: none !important;
+	background: transparent !important;
+	box-shadow: 0 0 6px -1px;
+	z-index: 1;
+}
+
+.blank {
+	background: lighten(tan, 10%);
+	height: 300px;
+	border-top: 1px solid black;
+	border-right: 1px dashed black;
+}
+
+//coupon contents
+
+.container {
+	width: 100%;
+	height: 300px;
+	max-width: 776px;
+	min-width: 640px;
+	position: relative;
+	margin: 5px auto;
+	top: 100px;
+	border: 1px solid black;
+	background: lighten(yellow, 45%);
+	box-shadow: 0 0 1px;
+	border-radius: 0 15px 15px 0;
+	overflow: hidden;
+}
+
+.book {
+	position: absolute;
+	left: 100px;
+	height: 100%;
+	width: 100%;
+	padding: 15px;
+	padding-left: 25px;
+
+	.count {
+		position: relative;
+		float: right;
+		right: 110px;
+		font-size: 18pt;
+	}
+
+	.title {
+		font-family: 'Dawning of a New Day', cursive;
+		position: absolute;
+		float: left;
+		font-size: 30pt;
+		font-weight: bold;
+		border-bottom: 1px solid black;
+	}
+
+	.detail {
+		position: relative;
+		margin: 0 auto;
+		top: 100px;
+		font-size: 12pt;
+		}
+
+	.debtee {
+		position: relative;
+		font-style: italic;
+		font-size: 10pt; 
+		top: 230px;
+		margin: 0 auto;
+	}
+}
+
+
+// Everything else
