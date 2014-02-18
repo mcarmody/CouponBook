@@ -98,7 +98,6 @@ a {
 .blank {
   background: #e0ccb1;
   height: 300px;
-  border-top: 1px solid black;
   border-right: 1px dashed black;
 }
 
@@ -151,4 +150,7 @@ a {
   font-size: 10pt;
   top: 230px;
   margin: 0 auto;
+}
+.book .debtee a {
+  text-decoration: none;
 }

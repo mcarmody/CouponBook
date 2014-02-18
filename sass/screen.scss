@@ -64,7 +64,7 @@ a {
 .blank {
 	background: lighten(tan, 10%);
 	height: 300px;
-	border-top: 1px solid black;
+	//border-top: 1px solid black;
 	border-right: 1px dashed black;
 }
 
@@ -122,6 +122,10 @@ a {
 		font-size: 10pt; 
 		top: 230px;
 		margin: 0 auto;
+
+		a {
+			text-decoration: none;
+		}
 	}
 }
 
